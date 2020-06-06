@@ -12,9 +12,9 @@ const navigator = createStackNavigator(
 
   },
   {
-    initialRouteName: "List",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "List"
+      title: "Home"
     }
   }
 );

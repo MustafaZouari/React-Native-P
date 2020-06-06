@@ -1,13 +1,37 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Button, Text, StyleSheet, View } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+const HomeScreen = ({navigation}) => {
+  
+   
+  return (
+    <View style = {styles.screenView} >
+     <Text style={styles.text}>HomeScreen</Text> 
+     <Button title = "Change Screen" onPress = {()=>{
+       navigation.navigate('List')
+     }} />
+     <Button title = "Change Screen To components" onPress = {()=>{
+       navigation.navigate('Component')
+     }} />
+    </View>
+    
+    );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    textAlign : 'center',
+    fontSize: 30,
+    color : '#10375c',
+    fontWeight  : 'bold',
+    fontStyle : 'italic',
+    
+
+  },
+  screenView : {
+    height : '100%',
+    backgroundColor : '#ea907a',
+
   }
 });
 
