@@ -13,6 +13,9 @@ const HomeScreen = ({navigation}) => {
      <Button title = "Change Screen To components" onPress = {()=>{
        navigation.navigate('Component')
      }} />
+     <Button title = "Change Screen To ImageScreen" onPress = {()=>{
+       navigation.navigate('Image')
+     }} />
     </View>
     
     );

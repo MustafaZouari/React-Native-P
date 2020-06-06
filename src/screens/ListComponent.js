@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, Text, StyleSheet , FlatList } from 'react-native'
 
-const ListComponent = (props) => {
-    console.log(props)
+const ListComponent = () => {
+    
     const friends = [
         {name : 'Friend 1' , age : 50},
         {name : 'Friend 2' , age : 55},
